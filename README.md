@@ -1,3 +1,33 @@
+# How to run this project:
+
+>import the database used in this project
+
+There are 2 ways to import the Database used, namely:
+The first way is to import the database directly into MySQL, then the user only adjusts the env file needed in this project.
+
+If using the first method, the following login account information:
+```
+name : admin
+email: admin@emailaddress
+password: admin123
+```
+
+The second way is with the command,
+```
+php artisan migrate
+```
+Where the user then needs to use the command
+```
+php artisan make:filament-user
+```
+then fill in the required contents such as name, email, and password.
+
+When you have done all that, the next step is to run this Laravel project with the command
+```
+php artisan serve
+```
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
